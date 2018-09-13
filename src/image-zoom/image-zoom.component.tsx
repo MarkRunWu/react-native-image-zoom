@@ -45,7 +45,7 @@ export default class ImageViewer extends React.Component<Props, State> {
   private imagePanResponder: PanResponderInstance | null = null;
 
   // 上次手按下去的时间
-  private lastTouchStartTime: number = 0;
+  // private lastTouchStartTime: number = 0;
 
   // 滑动过程中，整体横向过界偏移量
   private horizontalWholeOuterCounter = 0;
@@ -96,7 +96,7 @@ export default class ImageViewer extends React.Component<Props, State> {
         this.zoomLastDistance = null;
         this.horizontalWholeCounter = 0;
         this.verticalWholeCounter = 0;
-        this.lastTouchStartTime = new Date().getTime();
+        // this.lastTouchStartTime = new Date().getTime();
         this.isDoubleClick = false;
         this.isLongPress = false;
         this.isHorizontalWrap = false;
